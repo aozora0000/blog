@@ -81,7 +81,7 @@ theme: apollo
 lazyload:
   enable: true
   onlypost: false
-  loadingImg: ./images/loading.svg
+  loadingImg: /images/loading.svg
 
 ## Imagemin
 ## URL: https://github.com/vseventer/hexo-imagemin
