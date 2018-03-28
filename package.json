@@ -6,6 +6,7 @@
         "version": "3.6.0"
     },
     "dependencies": {
+        "hasky": "^3.0.2",
         "hexo": "^3.2.0",
         "hexo-deployer-git": "^0.3.1",
         "hexo-generator-archive": "^0.1.4",
@@ -17,20 +18,13 @@
         "hexo-renderer-ejs": "^0.3.0",
         "hexo-renderer-marked": "^0.3.0",
         "hexo-renderer-stylus": "^0.3.1",
-        "hexo-server": "^0.2.0",
-        "husky": "^0.15.0-rc.13"
+        "hexo-server": "^0.2.0"
     },
     "scripts": {
         "dev": "hexo server",
         "deploy": "hexo generate -d",
         "new": "hexo new",
-        "template": "git submodule foreach git pull origin master",
+        "prepush": "git submodule foreach git pull origin master",
         "open": "open https://blog.aozora0000.biz/"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "",
-            "pre-push": "yarn template"
-        }
     }
 }
