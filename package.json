@@ -22,6 +22,7 @@
     "scripts": {
         "dev": "hexo server",
         "deploy": "hexo generate -d",
-        "new": "hexo new"
+        "new": "hexo new",
+        "template": "git submodule foreach git pull origin master"
     }
 }
