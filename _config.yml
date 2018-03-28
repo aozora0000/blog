@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -74,6 +74,24 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: apollo
+
+# plugins
+## LazyLoad
+## URL: https://github.com/Troy-Yang/hexo-lazyload-image
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImg: ./images/loading.svg
+
+## Imagemin
+## URL: https://github.com/vseventer/hexo-imagemin
+imagemin:
+  enable     : true
+  interlaced : false
+  multipass  : false
+  optimizationLevel: 2
+  pngquant   : false
+  progressive: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
